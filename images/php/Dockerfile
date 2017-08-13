@@ -2,7 +2,7 @@ FROM php:7.0-fpm
 
 MAINTAINER xiaosong <1098030258@qq.com>
 
-COPY ./sources.list /usr/local/etc/php/conf.d/
+COPY ./sources.list /etc/apt/
 
 
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev \
